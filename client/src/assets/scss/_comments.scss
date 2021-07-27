@@ -1,0 +1,110 @@
+.comment-section {
+  @include flexprop(column, flex-start);
+  width: 100%;
+
+  h2 {
+    @include def-padding-margin($s-padding, $l-margin);
+    font-family: $heading-font-family;
+    text-decoration: none;
+    color: $font-color;
+    font-size: 1rem;
+  }
+  @media (min-width: 750px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  .login-prompt {
+    span {
+      color: $light-font-color;
+      font-size: 0.7rem;
+      font-weight: 300;
+      display: inline;
+    }
+    a {
+      color: $theme-color;
+      text-decoration: none;
+      font-size: 0.7rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (min-width: 750px) {
+    span {
+      font-size: 0.9rem;
+    }
+    a {
+      font-size: 0.9rem;
+    }
+  }
+
+  .comment-input {
+    @include def-padding-margin($m-padding, $m-margin);
+    @include border-params;
+    width: 80%;
+    outline: none;
+    letter-spacing: 1px;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem $box-shadow-color;
+
+    &::placeholder {
+      color: $light-font-color;
+      font-size: 1.1rem;
+    }
+  }
+
+  .submit-btn {
+    @include def-padding-margin($s-padding, $s-margin);
+    @include border-params;
+    background-color: $theme-color;
+    font-family: $heading-font-family;
+    color: $font-color-white;
+    box-shadow: 0.2rem 0.2rem 0.5rem $box-shadow-color;
+
+    &:hover {
+      background: linear-gradient(to right, #ec856b, #f10e88);
+    }
+  }
+
+  .comment-elems {
+    @include def-padding-margin($m-padding, $m-margin);
+    @include border-params;
+    width: 80%;
+    letter-spacing: 1px;
+    box-shadow: 0 0.5rem 0.5rem -0.7rem $box-shadow-color;
+
+    h3 {
+      font-family: $heading-font-family;
+      text-decoration: none;
+      color: $font-color;
+      font-size: 0.8rem;
+    }
+    span {
+      float: right;
+      color: $light-font-color;
+      font-size: 0.8rem;
+    }
+
+    .comment-body {
+      margin-top: $m-margin;
+      letter-spacing: 1px;
+      font-size: 0.6rem;
+      color: $font-color;
+    }
+    @media (min-width: 750px) {
+      h3 {
+        font-size: 1rem;
+      }
+      span {
+        font-size: 0.9rem;
+      }
+      .comment-body {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .space {
+    @include def-padding-margin($m-padding, $l-margin);
+  }
+}

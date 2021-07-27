@@ -1,0 +1,113 @@
+.main-register-container {
+  @include flexprop(column, center);
+  width: 100%;
+  .login-prompt {
+    margin-top: 2rem;
+    span {
+      color: $light-font-color;
+      font-size: 1rem;
+      font-weight: 300;
+      display: inline;
+    }
+    a {
+      color: $theme-color;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    @include def-padding-margin($s-padding, $s-margin);
+  }
+
+  .inner-container {
+    @include flexprop(column, center);
+    width: calc(100vw - 65vw);
+    background-color: $background;
+    border-radius: $m-border-radius;
+    box-shadow: 0.5rem 0.5rem 1rem $box-shadow-color;
+    margin: 5rem;
+  }
+  @media (max-width: 768px) {
+    .inner-container {
+      width: calc(100vw - 20vw);
+    }
+  }
+
+  .register-header {
+    @include flexprop(column, center);
+    @include def-padding-margin($s-padding, $s-margin);
+    color: $font-color;
+    .heading {
+      @include def-padding-margin($s-padding, $l-margin);
+      font-family: $heading-font-family;
+      letter-spacing: 1.2px;
+    }
+
+    h3 {
+      @include def-padding-margin($s-padding, $s-margin);
+      letter-spacing: 1.2px;
+      color: $font-color;
+      font-family: $heading-font-family;
+    }
+  }
+
+  .register-form {
+    @include flexprop(column, center);
+    width: 90%;
+
+    .form-control {
+      @include flexprop(column, center);
+      width: 90%;
+
+      .errorDiv {
+        margin-bottom: 0.5rem;
+        width: 80%;
+        color: $font-color-errors;
+      }
+    }
+
+    .form-control input {
+      @include def-padding-margin($s-padding, $s-margin);
+      @include border-params;
+      width: 80%;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .form-control input::placeholder {
+      font-family: $code-font-family;
+      color: $light-font-color;
+      font-size: 0.7rem;
+    }
+
+    .btn {
+      @include def-padding-margin($s-padding, $l-margin);
+      @include border-params;
+      width: 78%;
+      font-family: $heading-font-family;
+      background-color: $theme-color;
+      color: $font-color-white;
+      cursor: pointer;
+      outline: none;
+      font-family: $heading-font-family;
+      letter-spacing: 1.2px;
+      box-shadow: 0.2rem 0.2rem 0.5rem $box-shadow-color;
+
+      &:hover {
+        background: linear-gradient(to right, #ec856b, #f10e88);
+      }
+    }
+  }
+  .registerLink {
+    @include def-padding-margin($s-padding, $s-margin);
+    color: $font-color;
+    a {
+      color: $theme-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.main-container {
+  @include flexprop(column, center);
+  width: 90%;
+
+  .inner-container {
+    @include flexprop(column, center);
+    margin: 2rem;
+    width: calc(100vw - 20vw);
+    background-color: $background;
+    box-shadow: 0.5rem 0.5rem 1rem $box-shadow-color;
+
+    @media (min-width: 750px) {
+      .inner-container {
+        width: 90%;
+      }
+    }
+    .about-header {
+      @include flexprop(column, center);
+      @include def-padding-margin($s-padding, $s-margin);
+      color: $font-color;
+      .heading {
+        @include def-padding-margin($s-padding, $l-margin);
+        font-family: $heading-font-family;
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 1.2px;
+      }
+      h2 {
+        @include def-padding-margin(0, 0);
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: $theme-color;
+        font-family: $heading-font-family;
+      }
+
+      h3 {
+        font-size: 0.5rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        color: $light-font-color;
+      }
+
+      @media (min-width: 750px) {
+        .heading {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+        h2 {
+          @include def-padding-margin($s-padding, $s-margin);
+          font-size: 1.8rem;
+          letter-spacing: 3px;
+        }
+        h3 {
+          padding: 2rem;
+          margin: 1rem;
+          font-size: 1rem;
+          letter-spacing: 3px;
+          line-height: 3rem;
+        }
+      }
+    }
+    .emailDeets {
+      @include def-padding-margin(0, 0);
+      font-size: 0.5rem;
+      line-height: 1rem;
+      color: $font-color;
+
+      span {
+        color: $theme-color;
+        text-decoration: none;
+      }
+    }
+    @media (min-width: 750px) {
+      .emailDeets {
+        @include def-padding-margin($s-padding, $s-margin);
+      }
+    }
+  }
+}

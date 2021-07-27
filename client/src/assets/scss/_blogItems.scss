@@ -1,0 +1,57 @@
+.blog-list {
+  @include flexprop(column, center);
+
+  max-width: 1000px;
+  list-style: none;
+
+  .loading {
+    font-size: 2rem;
+    margin: 5rem;
+  }
+  .inner-container {
+    background-color: $background;
+
+    .blog-elems {
+      letter-spacing: 1px;
+      @include def-padding-margin($s-padding, $m-padding);
+      box-shadow: 0 0.5rem 0.5rem -0.5rem $box-shadow-color;
+
+      .blog-title {
+        width: 100%;
+        position: relative;
+        @include def-padding-margin($s-padding, $m-padding);
+        a {
+          font-family: $heading-font-family;
+          text-decoration: none;
+          color: $font-color;
+          font-size: 1.1rem;
+          position: absolute;
+          width: 90%;
+        }
+        @media (min-width: 750px) {
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      h6 {
+        @include def-padding-margin($s-padding, $m-padding);
+        font-family: $heading-font-family;
+        letter-spacing: 1px;
+        font-size: 0.75rem;
+        margin-top: 2rem;
+        span {
+          color: $theme-color;
+          font-size: 0.84rem;
+        }
+      }
+      .blog-list-body {
+        padding: $s-padding;
+        margin: $m-margin;
+        font-size: 0.8rem;
+        letter-spacing: 1.6px;
+        line-height: 2;
+      }
+    }
+  }
+}

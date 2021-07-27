@@ -1,0 +1,25 @@
+@import "./_variables";
+@import "./_navigation";
+@import "./content";
+@import "./blogItems";
+@import "./blogEntry";
+@import "./login";
+@import "./home";
+@import "./register";
+@import "./blogDetails";
+@import "./comments";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: $code-font-family;
+  overflow-x: hidden;
+}
+
+.App {
+  margin: 0 auto;
+}

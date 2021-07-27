@@ -1,0 +1,43 @@
+.blog-size {
+  @include flexprop(column, center);
+  width: 90%;
+  max-width: 1000px;
+  background-color: $background;
+
+  .form {
+    @include flexprop(column, center);
+    width: 90%;
+
+    .blog-title,
+    .blog-text,
+    .submit-btn {
+      @include border-params;
+      padding: $s-padding;
+      outline: none;
+      font-family: $code-font-family;
+      width: 90%;
+    }
+
+    .blog-title {
+      margin: 4rem 1rem 1rem 1rem;
+    }
+
+    .blog-text {
+      height: 300px;
+      margin: $m-margin;
+    }
+
+    .submit-btn {
+      background-color: $theme-color;
+      color: $font-color-white;
+      cursor: pointer;
+      margin: $m-margin;
+      font-family: $code-font-family;
+      box-shadow: 0.2rem 0.2rem 0.5rem $box-shadow-color;
+
+      &:hover {
+        background: linear-gradient(to right, #ec856b, #f10e88);
+      }
+    }
+  }
+}

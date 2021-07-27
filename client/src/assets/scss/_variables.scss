@@ -1,0 +1,55 @@
+$code-font-family: "DM Mono","Roboto Mono",Courier New,monospace;
+$heading-font-family: 'Playfair Display', serif;
+
+$theme-color: #f75098;
+$font-color-white: #fff;
+$font-color-errors: rgb(240, 139, 57);
+$background: rgb(240, 239, 239);
+$background-red: rgb(240, 171, 171);
+$font-color-hover: #f54291;
+$font-color: #444444;
+$light-font-color: #3d3c3c;
+$box-shadow-color: #1b1d25;
+
+$s-padding: 0.5rem;
+$m-padding: 1rem;
+$xl-padding: 5rem;
+$s-margin: 0.5rem;
+$m-margin: 1rem;
+$l-margin: 2rem;
+
+$s-border-radius: 5px;
+$m-border-radius: 10px;
+
+
+@mixin flexprop($par1, $par2) {
+    display: flex;
+    flex-direction: $par1;
+    justify-content: $par2;
+    align-items: center;
+  }
+
+  @mixin def-padding-margin($par1, $par2) {
+    padding: $par1;
+    margin: $par2;
+  }
+
+  @mixin border-params {
+    border: none;
+    border-radius: $s-border-radius;
+  }
+
+$box-shadow-color: #7f8386;
+
+$heading-color: #343a40;
+$dark-font-color: #1b1d25;
+$darkest-font-color: #000;
+$medium-font-color: #60656c;
+$navbar-color: #1b1d25;
+$navbar-font-color: #fff;
+$light-font-color: #858b93;
+
+$background-hover: #e2e6ec;
+
+
+

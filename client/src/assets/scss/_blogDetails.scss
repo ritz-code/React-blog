@@ -1,0 +1,58 @@
+.blog-background {
+  @include flexprop(column, center);
+
+  .loading {
+    margin: 5rem;
+    font-size: 2rem;
+  }
+  .blog-list {
+    @include flexprop(column, center);
+
+    max-width: 1000px;
+    background-color: $background;
+    list-style: none;
+
+    .blog-elems {
+      width: 90%;
+      letter-spacing: 1px;
+      @include def-padding-margin($s-padding, $m-padding);
+      box-shadow: 0 0.5rem 0.5rem -0.5rem $box-shadow-color;
+
+      .blog-title {
+        @include def-padding-margin($s-padding, $l-margin);
+        font-family: $heading-font-family;
+        text-decoration: none;
+        color: $font-color;
+        font-size: 1.1rem;
+      }
+      @media (min-width: 750px) {
+        .blog-title {
+          font-size: 1.6rem;
+        }
+      }
+
+      h6 {
+        @include def-padding-margin($s-padding, $l-margin);
+        font-family: $heading-font-family;
+        letter-spacing: 1px;
+        font-size: 0.75rem;
+        span {
+          color: $theme-color;
+          font-size: 0.84rem;
+        }
+      }
+      .blog-list-body {
+        @include def-padding-margin($s-padding, $l-margin);
+        font-size: 0.8rem;
+        letter-spacing: 1.6px;
+        line-height: 2;
+        white-space: pre-line;
+      }
+      @media (min-width: 750px) {
+        .blog-list-body {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}

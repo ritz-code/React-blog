@@ -1,0 +1,51 @@
+.site-navigation {
+  @include flexprop(column, space-between);
+  background-color: $theme-color;
+  padding: 1rem;
+
+  .logo {
+    color: $font-color-white;
+    font-family: $heading-font-family;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 1.2px;
+    padding: 0.5rem 1rem;
+    border-radius: $m-border-radius;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background: linear-gradient(to right, #f0957e, #f10e88);
+    }
+  }
+  .nav-list {
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      color: $font-color-white;
+      font-size: 0.7rem;
+      border-radius: 10px;
+      border: none;
+
+      &:hover {
+        background: linear-gradient(to right, #f0957e, #f10e88);
+      }
+    }
+  }
+}
+@media (min-width: 750px) {
+  .site-navigation {
+    @include flexprop(row, space-between);
+    .nav-list {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

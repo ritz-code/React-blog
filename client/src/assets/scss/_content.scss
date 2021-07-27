@@ -1,0 +1,4 @@
+.blog {
+  @include flexprop (column, center);
+  color: $font-color;
+}

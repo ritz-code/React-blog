@@ -1,0 +1,941 @@
+@charset "UTF-8";
+.site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f75098;
+  padding: 1rem;
+}
+
+.site-navigation span {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 1.2px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.site-navigation span:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f0957e), to(#f10e88));
+  background: linear-gradient(to right, #f0957e, #f10e88);
+}
+
+@media (max-width: 768px) {
+  .site-navigation span {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0 0.5rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+.site-navigation .nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.site-navigation .nav-list a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.site-navigation .nav-list a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f0957e), to(#f10e88));
+  background: linear-gradient(to right, #f0957e, #f10e88);
+}
+
+@media (max-width: 768px) {
+  .site-navigation .nav-list a .nav-list a {
+    padding: 0;
+    font-size: 0.4rem;
+  }
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #444444;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  background-color: #f0efef;
+  list-style: none;
+}
+
+.blog-list .blog-elems {
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  margin: 1rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.5rem #7f8386;
+          box-shadow: 0 0.5rem 0.5rem -0.5rem #7f8386;
+}
+
+.blog-list .blog-elems a {
+  padding: 0.5rem;
+  margin: 1rem;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.4rem;
+}
+
+.blog-list .blog-elems h6 {
+  padding: 0.5rem;
+  margin: 1rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+}
+
+.blog-list .blog-elems h6 span {
+  color: #f75098;
+  font-size: 0.84rem;
+}
+
+.blog-list .blog-elems .blog-list-body {
+  /*max-width: 1000px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;*/
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.6px;
+  line-height: 2;
+}
+
+.blog-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f0efef;
+}
+
+.blog-size .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.blog-size .form .blog-title,
+.blog-size .form .blog-text,
+.blog-size .form .submit-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  width: 90%;
+}
+
+.blog-size .form .blog-title {
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+.blog-size .form .blog-text {
+  height: 300px;
+  margin: 1rem;
+}
+
+.blog-size .form .submit-btn {
+  background-color: #f75098;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem;
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+          box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+}
+
+.blog-size .form .submit-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ec856b), to(#f10e88));
+  background: linear-gradient(to right, #ec856b, #f10e88);
+}
+
+.main-login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-login-container .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100vw - 65vw);
+  background-color: #f0efef;
+  border-radius: 10px;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem #7f8386;
+          box-shadow: 0.5rem 0.5rem 1rem #7f8386;
+}
+
+@media (max-width: 768px) {
+  .main-login-container .inner-container {
+    width: calc(100vw - 20vw);
+  }
+}
+
+.main-login-container .login-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.main-login-container .login-header .heading {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.2px;
+}
+
+.main-login-container .login-header h3 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  letter-spacing: 1.2px;
+  color: #444444;
+  font-family: "Playfair Display", serif;
+}
+
+.main-login-container .loginform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.main-login-container .loginform .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.main-login-container .loginform .form-control .errorDiv {
+  margin-bottom: 0.5rem;
+  width: 80%;
+  color: #f08b39;
+}
+
+.main-login-container .loginform .form-control input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  width: 80%;
+}
+
+.main-login-container .loginform .form-control input::-webkit-input-placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-login-container .loginform .form-control input:-ms-input-placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-login-container .loginform .form-control input::-ms-input-placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-login-container .loginform .form-control input::placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-login-container .loginform .btn {
+  padding: 0.5rem;
+  margin: 2rem;
+  border: none;
+  border-radius: 5px;
+  width: 78%;
+  font-family: "Playfair Display", serif;
+  background-color: #f75098;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.2px;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+          box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+}
+
+.main-login-container .loginform .btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ec856b), to(#f10e88));
+  background: linear-gradient(to right, #ec856b, #f10e88);
+}
+
+.main-login-container .loginLink {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.main-login-container .loginLink a {
+  color: #f75098;
+  text-decoration: none;
+}
+
+.main-login-container h2 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #f75098;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-color: #f0efef;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem #7f8386;
+          box-shadow: 0.5rem 0.5rem 1rem #7f8386;
+}
+
+@media (max-width: 768px) {
+  .main-container .inner-container .inner-container {
+    width: calc(100vw - 20vw);
+  }
+}
+
+.main-container .inner-container .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.main-container .inner-container .about-header .heading {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  line-height: 3rem;
+}
+
+.main-container .inner-container .about-header h2 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #f75098;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  font-family: "Playfair Display", serif;
+}
+
+.main-container .inner-container .about-header h3 {
+  padding: 1rem 20rem 2rem 20rem;
+  margin: 1rem;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: #858b93;
+  line-height: 3rem;
+}
+
+@media (max-width: 900px) {
+  .main-container .inner-container .about-header .heading {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .main-container .inner-container .about-header h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .main-container .inner-container .about-header h3 {
+    font-size: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+.main-container .inner-container .emailDeets {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.main-container .inner-container .emailDeets span {
+  color: #f75098;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .main-container .inner-container .emailDeets {
+    padding: 0;
+    margin: 0;
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+}
+
+.main-register-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-register-container h1 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #858b93;
+}
+
+.main-register-container .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100vw - 65vw);
+  background-color: #f0efef;
+  border-radius: 10px;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem #7f8386;
+          box-shadow: 0.5rem 0.5rem 1rem #7f8386;
+}
+
+@media (max-width: 768px) {
+  .main-register-container .inner-container {
+    width: calc(100vw - 20vw);
+  }
+}
+
+.main-register-container .register-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.main-register-container .register-header .heading {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.2px;
+}
+
+.main-register-container .register-header h3 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  letter-spacing: 1.2px;
+  color: #444444;
+  font-family: "Playfair Display", serif;
+}
+
+.main-register-container .register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.main-register-container .register-form .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.main-register-container .register-form .form-control .errorDiv {
+  margin-bottom: 0.5rem;
+  width: 80%;
+  color: #f08b39;
+}
+
+.main-register-container .register-form .form-control input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-register-container .register-form .form-control input::-webkit-input-placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-register-container .register-form .form-control input:-ms-input-placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-register-container .register-form .form-control input::-ms-input-placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-register-container .register-form .form-control input::placeholder {
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  color: #858b93;
+  font-size: 0.7rem;
+}
+
+.main-register-container .register-form .btn {
+  padding: 0.5rem;
+  margin: 2rem;
+  border: none;
+  border-radius: 5px;
+  width: 78%;
+  font-family: "Playfair Display", serif;
+  background-color: #f75098;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.2px;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+          box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+}
+
+.main-register-container .register-form .btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ec856b), to(#f10e88));
+  background: linear-gradient(to right, #ec856b, #f10e88);
+}
+
+.main-register-container .registerLink {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.main-register-container .registerLink a {
+  color: #f75098;
+  text-decoration: none;
+}
+
+.blog-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-background .blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  background-color: #f0efef;
+  list-style: none;
+}
+
+.blog-background .blog-list .blog-elems {
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  margin: 1rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.5rem #7f8386;
+          box-shadow: 0 0.5rem 0.5rem -0.5rem #7f8386;
+}
+
+.blog-background .blog-list .blog-elems h2 {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.6rem;
+}
+
+.blog-background .blog-list .blog-elems h6 {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+}
+
+.blog-background .blog-list .blog-elems h6 span {
+  color: #f75098;
+  font-size: 0.84rem;
+}
+
+.blog-background .blog-list .blog-elems .blog-list-body {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-size: .95rem;
+  letter-spacing: 1.6px;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+.comment-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.comment-section h2 {
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.4rem;
+}
+
+.comment-section .comment-input {
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  outline: none;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.5rem #7f8386;
+          box-shadow: 0 0.5rem 0.5rem -0.5rem #7f8386;
+}
+
+.comment-section .comment-input::-webkit-input-placeholder {
+  color: #858b93;
+  font-size: 1.1rem;
+}
+
+.comment-section .comment-input:-ms-input-placeholder {
+  color: #858b93;
+  font-size: 1.1rem;
+}
+
+.comment-section .comment-input::-ms-input-placeholder {
+  color: #858b93;
+  font-size: 1.1rem;
+}
+
+.comment-section .comment-input::placeholder {
+  color: #858b93;
+  font-size: 1.1rem;
+}
+
+.comment-section .submit-btn {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  background-color: #f75098;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+          box-shadow: 0.2rem 0.2rem 0.5rem #7f8386;
+}
+
+.comment-section .submit-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ec856b), to(#f10e88));
+  background: linear-gradient(to right, #ec856b, #f10e88);
+}
+
+.comment-section .comment-elems {
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.7rem #7f8386;
+          box-shadow: 0 0.5rem 0.5rem -0.7rem #7f8386;
+}
+
+.comment-section .comment-elems h3 {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: #444444;
+  font-size: 1rem;
+}
+
+.comment-section .comment-elems span {
+  float: right;
+  color: #858b93;
+  font-size: 0.9rem;
+}
+
+.comment-section .comment-elems .comment-body {
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #444444;
+}
+
+.comment-section .space {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "DM Mono", "Roboto Mono", Courier New, monospace;
+  overflow-x: hidden;
+}
+
+.App {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=base.css.map */
